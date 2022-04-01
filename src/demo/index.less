@@ -1,0 +1,45 @@
+.car-monitor-container {
+	margin-top: 10px;
+	background-color: #fff;
+	height: calc(100% - 10px);
+	.header-action {
+		width: 100%;
+		padding: 10px 15px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 56px;
+		border-bottom: 1px solid #f0f0f0;
+		.ant-space-item {
+			height: 36px;
+		}
+	}
+	.header-right-ops {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		.ant-checkbox-wrapper {
+			margin-right: 10px;
+		}
+		.ant-checkbox-wrapper + .ant-checkbox-wrapper {
+			margin-left: 0;
+		}
+
+		.ant-checkbox-wrapper span {
+			white-space: nowrap;
+		}
+	}
+	.conetent {
+		width: 100%;
+		height: calc(100% - 56px);
+		.list {
+			padding: 0px 20px 10px 10px;
+			height: 100%;
+			overflow-y: scroll;
+		}
+	}
+	.map-container {
+		height: 100%;
+	}
+}
