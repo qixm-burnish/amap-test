@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react'
 
-import carsData from './mockCars.json'
+import carsData from './carDetailList.json'
 
 export function useGetCarList() {
   const [page, setPage] = useState(1)
