@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/amap-test/static/css/main.51500179.css",
-    "main.js": "/amap-test/static/js/main.daf56b48.js",
-    "static/js/978.63016583.chunk.js": "/amap-test/static/js/978.63016583.chunk.js",
-    "index.html": "/amap-test/index.html",
-    "main.51500179.css.map": "/amap-test/static/css/main.51500179.css.map",
-    "main.daf56b48.js.map": "/amap-test/static/js/main.daf56b48.js.map",
-    "978.63016583.chunk.js.map": "/amap-test/static/js/978.63016583.chunk.js.map"
+    "main.css": "/static/css/main.51500179.css",
+    "main.js": "/static/js/main.daf56b48.js",
+    "static/js/978.63016583.chunk.js": "/static/js/978.63016583.chunk.js",
+    "index.html": "/index.html",
+    "main.51500179.css.map": "/static/css/main.51500179.css.map",
+    "main.daf56b48.js.map": "/static/js/main.daf56b48.js.map",
+    "978.63016583.chunk.js.map": "/static/js/978.63016583.chunk.js.map"
   },
   "entrypoints": [
     "amap-test/static/css/main.51500179.css",
