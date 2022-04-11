@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@amap/amap-jsapi-loader': ^1.0.1
   '@ant-design/icons': ^4.7.0
   '@babel/core': ^7.16.0
   '@babel/plugin-syntax-flow': ^7.16.7
@@ -50,10 +51,10 @@ specifiers:
   postcss-normalize: ^10.0.1
   postcss-preset-env: ^7.0.1
   prompts: ^2.4.2
-  react: ^18.0.0
+  react: '18'
   react-app-polyfill: ^3.0.0
   react-dev-utils: ^12.0.0
-  react-dom: ^18.0.0
+  react-dom: '18'
   react-infinite-scroll-component: ^6.1.0
   react-refresh: ^0.11.0
   resolve: ^1.20.0
@@ -72,6 +73,7 @@ specifiers:
   workbox-webpack-plugin: ^6.4.1
 
 dependencies:
+  '@amap/amap-jsapi-loader': 1.0.1
   '@ant-design/icons': 4.7.0_react-dom@18.0.0+react@18.0.0
   '@babel/core': 7.17.8
   '@pmmmwh/react-refresh-webpack-plugin': 0.5.4_cb46ffc29cbac33b1cd7a2454d0f4425
@@ -145,6 +147,10 @@ devDependencies:
   less-loader: 10.2.0_less@4.1.2+webpack@5.70.0
 
 packages:
+
+  /@amap/amap-jsapi-loader/1.0.1:
+    resolution: {integrity: sha512-nPyLKt7Ow/ThHLkSvn2etQlUzqxmTVgK7bIgwdBRTg2HK5668oN7xVxkaiRe3YZEzGzfV2XgH5Jmu2T73ljejw==}
+    dev: false
 
   /@ampproject/remapping/2.1.2:
     resolution: {integrity: sha512-hoyByceqwKirw7w3Z7gnIIZC3Wx3J484Y3L/cMpXFbr7d9ZQj2mODrirNzcJa+SM3UlpWXYvKV4RlRpFXlWgXg==}

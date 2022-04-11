@@ -1,0 +1,54 @@
+---
+#-------------------- web front end deployment -------------#
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: demo
+  name: amap-test
+  labels:
+    environment: dev
+    app: amap-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      environment: dev
+      app: amap-test
+  template:
+    metadata:
+      namespace: demo
+      labels:
+        environment: dev
+        app: amap-test
+    spec:
+      containers:
+        - name: web-front
+          image: roading/amap-test:v1
+          resources:
+            limits:
+              cpu: 400m
+              memory: 200Mi
+            requests:
+              cpu: 200m
+              memory: 200Mi
+
+---
+#-------------------- web front end service -------------#
+
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: demo
+  name: amap-test
+spec:
+  selector:
+    environment: dev
+    app: amap-test
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30400
+  type: NodePort
+---
+
