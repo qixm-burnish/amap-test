@@ -1,6 +1,6 @@
-import { Row, Col } from 'antd'
-
 import React, { useCallback, useEffect, useState } from 'react'
+
+import { Row, Col } from 'antd'
 
 import { load as AMapLoader } from '@amap/amap-jsapi-loader'
 
@@ -72,8 +72,13 @@ const Index: React.FC = () => {
   const onLeftCarSelect = (item) => {
     if (map) {
       map.setZoom(15)
-      // 地图移动完成后，根据地图当前位置去获取当前城市的车辆列表
       map.setCenter([item.dynamic_lng, item.dynamic_lat])
+
+      // 地图移动完成后，根据地图当前位置去获取当前城市的车辆列表。因此需要进行一次性监听地图移动事件，但该语句导致地图无法正常显示
+      map.on('moveend', () => {
+        map.clearEvents('moveend')
+        initMapMarkers()
+      })
     }
   }
 
